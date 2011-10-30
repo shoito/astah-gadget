@@ -5,8 +5,8 @@
 		height="320"
 		author="shoito"
 		description="astah UML diagram Viewer"
-		screenshot="https://github.com/shoito/astah-gadget/raw/master/screenshot.png"
-		thumbnail="https://github.com/shoito/astah-gadget/raw/master/thumbnail.png">
+		screenshot="http://f.air-life.net/apps/gadgets/astah/screenshot.png"
+		thumbnail="http://f.air-life.net/apps/gadgets/astah/thumbnail.png">
 		<Require feature="dynamic-height" />
 	</ModulePrefs>
 	<UserPref 
