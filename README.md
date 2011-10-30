@@ -3,7 +3,7 @@
 
 astah Viewerを使うことで、[astah](http://astah.change-vision.com/)で描かれたUML、ER図、データフロー図、フローチャート、CRUD、要求図、マインドマップをOpenSocial対応インフラ上で見ることができます。
 
-![astah Viewer](screenshot.png "astah Viewer")
+![astah Viewer](https://github.com/shoito/astah-gadget/raw/master/screenshot.png "astah Viewer")
 
 ## Gadget URL
 [http://f.air-life.net/apps/gadgets/astah/astah-gadget.xml](http://f.air-life.net/apps/gadgets/astah/astah-gadget.xml)
