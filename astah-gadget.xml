@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+	<ModulePrefs 
+		title="astah Viewer"
+		height="320"
+		author="shoito"
+		description="astah UML diagram Viewer"
+		screenshot="https://github.com/shoito/astah-gadget/raw/master/screenshot.png"
+		thumbnail="https://github.com/shoito/astah-gadget/raw/master/thumbnail.png">
+		<Require feature="dynamic-height" />
+	</ModulePrefs>
+	<UserPref 
+		name="astahUrl" 
+    	display_name="astah URL" 
+    	required="true"
+    	default_value="http://p.astah.net/a/dademo" />
+	<UserPref 
+		name="gadgetsWidth" 
+    	display_name="width" 
+    	required="true"
+    	default_value="480" />
+	<UserPref 
+		name="gadgetsHeight" 
+    	display_name="height" 
+    	required="true"
+    	default_value="320" />
+	<Content type="html"
+		preferred_width="480"
+		preferred_height="320">
+	<![CDATA[
+	<div id="content_div"></div>
+	<script type="text/javascript">
+	function displayAstah() {
+		var prefs = new gadgets.Prefs();
+		var astahUrl = prefs.getString('astahUrl');
+		var gadgetsWidth = prefs.getInt('gadgetsWidth');
+		var gadgetsHeight = prefs.getInt('gadgetsHeight');
+		
+		if (astahUrl.indexOf('//p.astah.net/a/') > -1
+			|| astahUrl.indexOf('//p.astah.net/d/') > -1) {
+			document.getElementById('content_div').innerHTML = '<iframe src="' + astahUrl+ '/embed" width="' + gadgetsWidth + '" height="' + gadgetsHeight + '" frameborder="0" scrolling="no" />';
+		}
+		gadgets.window.adjustHeight();
+	}
+		
+	gadgets.util.registerOnLoadHandler(displayAstah);
+	</script>
+	 ]]>
+	</Content> 
+</Module>
